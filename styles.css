@@ -1,0 +1,49 @@
+body{
+    background-color: aliceblue;
+    margin:0;
+}
+
+header{
+    background-color: grey;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left {
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.nav-left li a {
+    font-size: 1.2rem;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    position: relative;
+    padding-right: 3rem;
+}
+
+#skills{
+    text-align: start;
+}
+
+#bodyHeader{
+    text-align: center;
+}
+
+#home{
+    text-align: center;
+}
+

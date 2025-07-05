@@ -126,6 +126,10 @@ nav a:hover {
     background-color: #ffffff;
 }
 
+.project-header{
+  text-align: center;
+}
+
 #Contact {
     background-color: #f0f8ff;
 }

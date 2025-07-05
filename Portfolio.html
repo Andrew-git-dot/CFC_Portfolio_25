@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="Scripts.jss"></script>
 </head>
 
 
@@ -22,6 +23,7 @@
                     <li><a href="#Projects" class="nav-link">PROJECTS</a></li>
                     <li><a href="#Contact" class="nav-link">CONTACT</a></li>
                 </ul>
+            </div>
         </nav>
 
     </header>
@@ -36,7 +38,7 @@
     <section id="about" class="section">
     <div>
         <h2 id="bodyHeader">About Me</h2>
-        <p>Welcome to my portfolio! I am a motivated and detail-oriented Data Science & Japanese Student with experience in data visualization,
+        <p id="AboutP">Welcome to my portfolio! I am a motivated and detail-oriented Data Science & Japanese Student with experience in data visualization,
         Python, and R programming languages. My skills include statistical modeling, simulation, probabilistic
         reasoning, and communicating my statistical insights which I have developed throughout my studies.
         I am passionate about Japanese Language and culture and am fluent in written and spoken Japanese and have
@@ -44,47 +46,62 @@
     </div>
     </section>
 
-    <section id="skills" class="section">
-    <div>
-        <h2 id="bodyHeader">Skills</h2>
-        <ul>
-            <li>Data Science & Analytics <!-- Maybe instead of list can have this as a Title and images relating to the below? -->
-                <ul>
-                    <li>Regression Analysis</li>
-                    <li>Simulation</li>
-                    <li> Data Visualization</li>
-                    <li>Statistical Modeling</li>
-                    <li>Machine Learning</li>
-                </ul>
-            </li>
-            <li>Tools & Technologies
-                <ul>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>Jupyter</li>
-                    <li>PowerBI</li>
-                    <li>Excel</li>
-                    <li>Html</li>
-                    <li>LaTeX</li>
-                </ul>
-            </li>
-            <li>Languages
-                <ul>
-                    <li>English (Native)</li>
-                    <li>Japanese (Fluent, JLPT N2)</li>
-                </ul>
-            </li>
-        </ul>
-        <p>These are some of the skills I have developed over the years.</p>   
+<section id="skills" class="section">
+  <div>
+    <h2 id="bodyHeader">Skills</h2>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-arrow left" onclick="scrollCarousel(-1)">&#9664;</button>
+
+      <div class="carousel-container" id="skills-carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide">
+          <h3>Data Science & Analytics</h3>
+          <ul>
+            <li>Regression Analysis</li>
+            <li>Simulation</li>
+            <li>Data Visualization</li>
+            <li>Statistical Modeling</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>Jupyter</li>
+            <li>PowerBI</li>
+            <li>Excel</li>
+            <li>HTML</li>
+            <li>LaTeX</li>
+          </ul>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <h3>Languages</h3>
+          <ul>
+            <li>English (Native)</li>
+            <li>Japanese (Fluent, JLPT N2)</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="carousel-arrow right" onclick="scrollCarousel(1)">&#9654;</button>
     </div>
-    </section>
+  </div>
+</section>
+
 
     <section id="Projects" class="section">
     <div>
         <h2 id="bodyHeader">Projects & Experience</h2>
         <ul>
-            <li><a>Web Development (Portfolio)</a></li>
-            <li><a href="https://www.instagram.com/curtinjapaneseclub/">Curtin Japanese Club (President)</a></li>
+            <li><a href="https://github.com/Andrew-git-dot" target="_blank">Basic Web Development</a></li>
+            <li><a href="https://www.instagram.com/curtinjapaneseclub/" target="_blank" >Curtin Japanese Club (President)</a></li>
         </ul>
     </div>  
     </section>
